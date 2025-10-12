@@ -5,53 +5,80 @@
 
 ---
 
-## 🩺 Overview
+## 💡 Overview
 
-**Heart Stroke Prediction System** – A **Streamlit-based web application** that predicts the risk of **stroke** in patients using a **K-Nearest Neighbors (KNN)** model.  
-Users can input patient details and get **instant predictions**, along with **visualizations** of the dataset.
+The **Heart Stroke Prediction System** is an interactive **Streamlit web application** that predicts the likelihood of a person having a **stroke** based on health and lifestyle parameters.  
+It utilizes a **Machine Learning (KNN)** model trained on medical data to provide **real-time risk assessment** with an easy-to-use interface.
 
----
-
-## ✨ Features
-
-- 🧑‍⚕️ **Patient Data Inputs**:
-  - Age, BMI, Average Glucose Level  
-  - Gender, Marital Status, Work Type, Residence Type  
-  - Smoking Status, Hypertension, Heart Disease  
-
-- 🛠 **Data Preprocessing**:
-  - Removed `id` column  
-  - Filled missing **BMI** values with mean  
-  - Encoded categorical variables using **LabelEncoder**  
-  - Scaled numeric features using **StandardScaler**  
-  - Handled imbalanced data using **SMOTE**  
-
-- 📊 **Model & Evaluation**:
-  - Algorithm: **K-Nearest Neighbors (KNN)**  
-  - Accuracy: **~80%**  
-  - Evaluation: Confusion Matrix, Classification Report  
-  - Visualizations: Stroke distribution, Age vs Glucose, BMI distribution  
-
-- 💻 **Streamlit Frontend**:
-  - Dropdowns show readable labels with codes (e.g., `Male = 0`)  
-  - Real-time input validation  
-  - Compact one-page layout  
-  - Background image with 50% transparency  
-  - Footer credit: **Made by Shrikant**
+This project bridges **data science** and **healthcare**, helping users and doctors analyze potential stroke risks before symptoms appear.
 
 ---
 
-## 🖼️ App Screenshots
+## ✨ Key Features
 
-| 🩸 Input Form | 📈 Prediction Output |
+- 🧠 **Machine Learning-Based Prediction**
+  - Uses **K-Nearest Neighbors (KNN)** algorithm for classification
+  - Accuracy around **80%**
+
+- 👨‍⚕️ **User Input Parameters**
+  - Age, Gender, Marital Status, Work Type, Residence Type  
+  - Hypertension, Heart Disease, Smoking Status  
+  - Average Glucose Level, BMI  
+
+- 🛠 **Data Preprocessing**
+  - Missing **BMI** values replaced with mean  
+  - Categorical features encoded using **LabelEncoder**  
+  - Numeric values scaled using **StandardScaler**  
+  - Data imbalance handled via **SMOTE (Synthetic Minority Oversampling Technique)**
+
+- 📈 **Model Evaluation**
+  - Confusion Matrix  
+  - Classification Report  
+  - Accuracy Score  
+  - Visual plots showing feature relationships
+
+- 💻 **Streamlit Frontend**
+  - Clean, responsive, one-page design  
+  - Dropdowns with meaningful labels  
+  - Real-time prediction output  
+  - Transparent background styling  
+  - Footer credit: *“Made by Shrikant”*
+
+---
+
+## 🧩 Project Workflow
+
+1. **Data Loading** → CSV dataset loaded using pandas  
+2. **Data Cleaning** → Handle nulls, remove ID column  
+3. **Encoding** → Convert categorical data to numeric  
+4. **Scaling** → Normalize features  
+5. **Balancing** → Apply SMOTE for class balancing  
+6. **Model Training** → Train KNN classifier  
+7. **Evaluation** → Assess model performance  
+8. **Deployment** → Build UI using Streamlit  
+
+---
+
+## 🖼️ Screenshots
+
+| 🩺 Input Form | 📊 Prediction Output |
 |---------------|----------------------|
 | ![App Screenshot 1](https://github.com/shrikant0903/Heart_Stroke_Pridiction_System_Project/blob/main/Screenshot1.png) | ![App Screenshot 2](https://github.com/shrikant0903/Heart_Stroke_Pridiction_System_Project/blob/main/Screenshot2.png) |
 
 ---
 
-## 🚀 Installation
+## 🚀 Live Demo
 
-To run locally:
+Try the live application here 👇  
+🔗 **[Heart Stroke Prediction System (Streamlit App)](https://heartstroke-prediction-system.streamlit.app/)**  
+
+No installation required — runs directly in your browser!
+
+---
+
+## ⚙️ Installation (Run Locally)
+
+Clone this repository and install dependencies:
 
 ```bash
 git clone https://github.com/shrikant0903/Heart_Stroke_Pridiction_System_Project.git
