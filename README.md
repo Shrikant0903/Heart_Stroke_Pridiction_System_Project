@@ -3,7 +3,7 @@
 [![Live App](https://img.shields.io/badge/🌐_Live_App-Click_Here-brightgreen?style=for-the-badge)](https://heartstroke-prediction-system.streamlit.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-View_Repository-black?style=for-the-badge&logo=github)](https://github.com/shrikant0903/Heart_Stroke_Pridiction_System_Project)
 
----
+--
 
 ## 💡 Overview
 
